@@ -1,0 +1,27 @@
+body {
+  overflow-x: hidden;
+}
+
+.well {
+  z-index: 3;
+  border: 0px;
+  background: red;
+  position: relative;
+  text-align: right;
+  overflow-x: visible;
+}
+.well:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 80%;
+  right: -3000px;
+  background: red;
+  z-index: -1;
+  text-align: right;
+}
+.well img {
+  width: 100%;
+  max-width: 100%;
+}

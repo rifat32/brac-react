@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+.font1 {
+  font-family: "Inter";
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.font2 {
+  font-family: "Inter";
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fw300 {
+  font-weight: 300;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.color1 {
+  color: #092c58;
 }
-
-.App-link {
-  color: #61dafb;
+.lh64 {
+  line-height: 64px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.lh45 {
+  line-height: 45px;
+}
+.lh36 {
+  line-height: 36px;
+}
+.custom-font {
+  font-size: 3rem;
+}
+.custom-font-2 {
+  font-size: 2rem;
+}
+.custom-font-1 {
+  font-size: 0rem;
+}
+.frame {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+.zoomin img {
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.prodet:hover img {
+  -webkit-transform: scale(1.15); /* Safari and Chrome */
+  -moz-transform: scale(1.15); /* Firefox */
+  -ms-transform: scale(1.15); /* IE 9 */
+  -o-transform: scale(1.15); /* Opera */
+  transform: scale(1.15);
+}
+a.prodet:hover .arrowset {
+  opacity: 1;
+}
+.arrowset {
+  opacity: 0;
+}
+a {
+  text-decoration: none;
+}
+.bg-primary-custom {
+  background-color: #092c58;
+}
+.color3 {
+  color: #fff;
+}
+.footer {
+  background: #11171f;
+  padding: 60px 0;
+  font-size: 14px;
 }
