@@ -4,6 +4,10 @@ import {FaFacebook,FaInstagram,FaLinkedin} from 'react-icons/fa'
 
 const MainFooter = () => {
     const footerLogo = 'assets/img/logofooter.svg'
+    const scrollTop = ():void => {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
     return (
         <footer id="footer" className="footer ms-5">
         <div className="footer-top">
@@ -23,7 +27,7 @@ const MainFooter = () => {
                   <ul className="termlink mt-2">
                     <li>
                     <Link to="/terms-conditions">
-                    <a className="text-light">Terms and Conditions</a>
+                    <a onClick={scrollTop} className="text-light">Terms and Conditions</a>
                     </Link>
                        </li>  
                   </ul>
@@ -42,28 +46,28 @@ const MainFooter = () => {
                 <h4 className="text-light">website</h4>
                 <ul style={{ listStyleType: "none" }} className="mt-3" data-aos="fade-up" data-aos-delay={300}>
                   <li className="my-1" > 
-                    <Link to="/">
-                    <a  className="text-light">home</a>
+                    <Link to="/#">
+                    <a onClick={scrollTop}  className="text-light">home</a>
                     </Link>
                     </li > 
                     <li className="my-1"> 
-                    <Link to="/services">
-                    <a  className="text-light">services</a>
+                    <Link to="/services#">
+                    <a onClick={scrollTop}  className="text-light">services</a>
                     </Link>
                     </li> 
                     <li className="my-1"> 
-                    <Link to="/products">
-                    <a className="text-light">products</a>
+                    <Link to="/products#">
+                    <a onClick={scrollTop} className="text-light">products</a>
                     </Link>
                     </li> 
                     <li className="my-1"> 
-                    <Link to="/about">
-                    <a className="text-light">about</a>
+                    <Link to="/about#">
+                    <a onClick={scrollTop} className="text-light">about</a>
                     </Link>
                     </li> 
                     <li className="my-1"> 
-                    <Link to="/contact">
-                    <a className="text-light">contact</a>
+                    <Link to="/contact#">
+                    <a onClick={scrollTop} className="text-light">contact</a>
                     </Link>
                     </li> 
                 </ul>
@@ -71,7 +75,7 @@ const MainFooter = () => {
               <div className="col-lg-2 col-md-4  footer-contact  text-md-start" data-aos="fade-up" data-aos-delay={200}>
                 <h4 className="text-light">social</h4>
                 <div className="social-links mt-3">
-                  <a rel="noreferrer" href="https://www.facebook.com/bracitservices/" target="_blank" className="facebook  text-light me-2"><FaFacebook style={{ fontSize:"2rem" }}/></a>
+                  <a  rel="noreferrer" href="https://www.facebook.com/bracitservices/" target="_blank" className="facebook  text-light me-2"><FaFacebook style={{ fontSize:"2rem" }}/></a>
                   <a rel="noreferrer" href="https://www.instagram.com/bracit_/" target="_blank" className="instagram text-light me-2"><FaInstagram style={{ fontSize:"2rem" }} /></a>
                   <a rel="noreferrer" href="https://www.linkedin.com/company/brac-it-services-limited" target="_blank" className="linkedin text-light"><FaLinkedin style={{ fontSize:"2rem" }}/></a>
                 </div>
