@@ -1,10 +1,8 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  NavLink
 } from 'react-router-dom';
 import './App.css';
 import MainFooter from './components/Footer/MainFooter';
@@ -15,8 +13,13 @@ import HomePage from './pages/HomePage';
 import ProductPage from './pages/ProductPage';
 import ServicesPage from './pages/ServicesPage';
 import TermsPAge from './pages/TermsPAge';
+import {AiOutlineArrowUp} from 'react-icons/ai'
+import { backToTop } from './utils/BackToTop'
 
 function App() {
+  useEffect(() => {
+backToTop()
+  },[])
   return (
    
        <Router >
@@ -36,6 +39,8 @@ function App() {
        
        </Switch>
        <MainFooter/>
+      
+       <a href="#" className="back-to-top d-flex align-items-center justify-content-center"> <AiOutlineArrowUp/></a>
        </div>
        </Router>
     

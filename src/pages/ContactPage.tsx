@@ -1,10 +1,12 @@
 import React from 'react'
+import ContactsSection from '../components/ContactPageComponents/ContactsSection'
 
 const ContactPage = () => {
     return (
-        <div>
-            hello from contact page
-        </div>
+        <main id="main" className="inner-page">
+            {/* <ContactSection/> */}
+            <ContactsSection/>
+        </main>
     )
 }
 

@@ -26,7 +26,7 @@
   font-size: 2rem;
 }
 .custom-font-1 {
-  font-size: 0rem;
+  font-size: 1.5rem;
 }
 .frame {
   width: 100%;
@@ -67,4 +67,32 @@ a {
   background: #11171f;
   padding: 60px 0;
   font-size: 14px;
+}
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 25px;
+  bottom: 25px;
+  z-index: 99999;
+  background: #092c58;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top svg {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+.back-to-top:hover {
+  background: #6776f4;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
 }

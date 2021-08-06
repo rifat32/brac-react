@@ -52,8 +52,8 @@ const MainFooter = () => {
                     </Link>
                     </li> 
                     <li className="my-1"> 
-                    <Link to="/product">
-                    <a className="text-light">product</a>
+                    <Link to="/products">
+                    <a className="text-light">products</a>
                     </Link>
                     </li> 
                     <li className="my-1"> 
@@ -73,7 +73,7 @@ const MainFooter = () => {
                 <div className="social-links mt-3">
                   <a rel="noreferrer" href="https://www.facebook.com/bracitservices/" target="_blank" className="facebook  text-light me-2"><FaFacebook style={{ fontSize:"2rem" }}/></a>
                   <a rel="noreferrer" href="https://www.instagram.com/bracit_/" target="_blank" className="instagram text-light me-2"><FaInstagram style={{ fontSize:"2rem" }} /></a>
-                  <a rel="noreferrer" href="https://www.linkedin.com/company/brac-it-services-limited" target="_blank" className="linkedin"><FaLinkedin style={{ fontSize:"2rem" }}/></a>
+                  <a rel="noreferrer" href="https://www.linkedin.com/company/brac-it-services-limited" target="_blank" className="linkedin text-light"><FaLinkedin style={{ fontSize:"2rem" }}/></a>
                 </div>
               </div>
             </div>
